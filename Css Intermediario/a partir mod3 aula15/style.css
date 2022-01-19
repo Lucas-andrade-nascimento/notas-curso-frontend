@@ -1,0 +1,38 @@
+p {
+	font-family: Helvetica, Arial, "Comic Sans MS";
+	font-style: italic;
+	text-align: justify ;
+	font-size: 18px;
+	
+	/* font-weight: bold; - voce pode atribuir o quao "Bold" sera o negrito, colocando de 100 a 900 */
+	/*no line-height da pra colocar a qntd em px, em numeral (q é tipo 2x o tamanho da fonte) e com % */
+	/* text-shadow: 1px 1px #bbb; - sobreamento de texto, primeiro valor é pra baixo, segundo pra direita e dps a cor da sombra */
+
+}
+.links {
+
+	text-decoration: none;
+	/* cursor: crosshair; - altera o cursor quando ele esta sobre o link*/
+	color:  white;
+	background: #bc2035;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	border: 2px solid pink; */
+
+}
+/* 
+Por padrao, essa estrutura de alteração de link antes dele ser clicado etc, é o links depois tem o visited e por fim: 
+para mexer no link quando o cursor ta sobre ele: 
+.links:hover{
+	background: #bc2035;
+	color: white;
+}
+
+Para mexer no link quando clica nele: 
+.links:active{
+	background-color: white;
+	color: blue;
+}
+ */

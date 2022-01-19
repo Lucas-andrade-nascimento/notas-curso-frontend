@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> html intermediario</title>
+
+</head>
+<body>
+	<p> Pratica das aulas 1 a 5</p>
+	<form method="POST" action="">
+		<!-- no method="GET" do form acima, os dados inseridos nos formularios, aparecem nas barra de texto depois que o usuario envia, ele nao é bom para login (por exemplo). ja no POST, nao aparece.
+		no youtube por exemplo é GET, entao vc tem q saber qual requisição o backend  espera -->
+		<input type="email" name="email"> <br>
+		<input type="text" name="nome"> <br>
+		<input type="password" name="senha"> <br>
+		<input type="checkbox" name="curso" value="op1">React Native<br>
+		<input type="checkbox" name="curso" value="op2">React Js<br>
+		<input type="radio" name="gender" value="m" checked>Masc.<br>
+		<input type="radio" name="gender" valeu="f">Fem.<br>
+		<!-- na opção radio, marcar o mesmo name nas opções que voce quer caso que seja possivel marcar so uma-->
+
+		<input type="reset" value="Limpar">
+		<input type="submit" value="inscrever">
+
+	</form>
+	<p>Buscador pessoal youtube:</p>
+	<form method="GET" action="https://www.youtube.com/results">
+		<input type="text" name="search_query">
+		<input type="submit" value="Pesquisar">
+		
+	</form>
+	<p> Praticas da aula 5</p>
+	<form method="GET" action="">
+		<select name="estado">
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="SP">São Paulo</option>
+		<input type="submit">	
+	</form>
+<br><br>
+<p> Praticas da aula 6</p>
+	<form method="GET" action="">
+		<input type="text" name="assunto"><br>
+		<textarea name="mensagem"></textarea>  
+	<input type="submit">	
+	</form>
+</body>
+</html>

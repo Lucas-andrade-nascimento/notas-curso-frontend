@@ -1,0 +1,32 @@
+
+.cartao{ 
+
+	background: url(backgorund.png) left;
+	background-repeat: no-repeat;
+	background-size: 400px 200px;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, "sans-serif;";
+	font-size: 24px;
+}
+.nome{
+	padding-top: 5px;
+	margin:20px;
+
+}
+ul{
+	font-size: 0.7em;
+	list-style-type: none;
+	margin: 8px;
+
+}
+
+.lista1 {
+	list-style-image: url(Insta.png);
+}
+.lista2 {
+	list-style-image: url(Twitter.png);
+}
+.lista3 {
+	list-style-image: url(Youtube.png);
+}

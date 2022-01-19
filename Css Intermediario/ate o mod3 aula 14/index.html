@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Minha primeira página</title>
+		<meta charset="utf-8">
+		<!--Esse trecho acima é padrao-->
+
+<!--Assim que se faz comentarios malandragem -->
+
+ <!-- o css interno é utiizando uma tag par que dentro dela seja referenciado todo o conteudo a ser estilizado. Ele fica inserido na tag <head> Ex: 		
+ <style type="text/css">
+			p{
+				color: green;
+
+			}
+
+		</style>
+
+	-->
+	<link href="style.css" rel="stylesheet">
+	<!-- para o css externo, cria-se um arquivo .css e se faz a referencia como o acima, deixando claro qual a relação dele com o arquivo. dentro do arquivo css, se referencia o texto da msm forma que o interno. ex: 
+		p{
+	color: green;
+
+}
+
+-->
+		
+	</head>
+	<body>
+		<a href= #sorvete_mor>Sorvete</a>
+
+		<h1 id="titulo">Título 1</h1>
+
+<!-- o id referencia uma tag para varias funcões. Com o css por exemplo, voce pode colorir so um texto q voce deseja, nao todo a pagina. tem como referenciar pra criar links na propria pagina tbm (como o 'a href= #sorvete_mor' acima)-->
+
+		<h2>Sub-título 2</h2>
+			<p id="parprincipal"> asjidjaisjiajsahushfihsuidfnainsdfuiasduifuiahsdfihaiusdhfuiahsdifhsdaij asudhaushda ahsuhduahs ahsudhauhdua amioefoem iasi.</p>
+
+<!-- o css inline sera praticado aqui tambem. para utilizar ele dentro de uma tag usa-se o atributo style (o atributo em si, ja é o css), e assim é o css inline, ou seja, dentro da linha da tag (ex: <p style="color:brown;">).
+Para que ela seja "chamada" utiliza-se o # seguido do nome do id, tanto no proprio arquivo quanto no arquivo css.--> 
+
+			<p class="texto_verde"> texto em <strong>negrito</strong></p>
+			<p class="texto_verde"> agora um texto <em>em italico</em></p>
+			<p class="texto_verde">agora um <mark>texto com marcação</mark></p>
+
+<!-- a class referencia tambem uma tag, porem ela pode ser utilizada varias vezes, diferente do id. para ser "chamada", utiliza-se o '.'(ponto) seguido do nome da class (.texto_verde
+), tanto no proprio arquivo quanto no arquivo css.-->			
+			<p>texto com <small>tag small</small></p>
+			<p> textos com linha é o <del>removido</del> e substituido</p>
+			<p> textos com sublinhado <ins> ou inserido</ins></p>
+			<p>esse é um <sub> texto subescrito</sub></p>
+			<p> esse é o <sup> superescrito</sup></p>
+			<a href="sobre.html">sobre ProgBr</a> <!-- o 'a', coloca links na pagina-->
+			<!-- strong, mark, small e todos esses atributos, sao bons ao SEO, sao atirbutos nao semanticos q formatam o texto. é de bom ton usa-los entao nem coloquei os outros-->
+			<br/> <!--serve para pular uma linha, nao precisa da barra no fim (so se for antes do html 5), mas coloquei pra me ligar em como era-->
+
+			<img id="sorvete_mor" src="https://www.rbsdirect.com.br/imagesrc/25439093.jpg?w=700" alt="Soervete de morango" width=300>  <!--o alt serve para nomear a imagem, ajudando o google a acha-la, pq ele le texto ne kkk, e tambem para mostrar no lugar de algum erro da imagem-->
+			<br>
+			<a href="https://viagemegastronomia.cnnbrasil.com.br/gastronomia/dia-do-sorvete-5-lugares-que-oferecem-sabores-nada-convencionais-em-sao-paulo/">
+		
+				<img src="Imagens\casquinhas.jpg" alt="casquinha" height=200>
+			</a>	
+
+
+			<h2>Lista de compras</h2>
+			<ul>
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+				<li>item 4</li>
+			</ul>	
+			<h2> Lista melhores vendedores</h2>
+			<ol>
+				<li> Marcia</li>
+				<li>Felipe</li>
+				<li>Partricia</li>
+			</ol>
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>Telefone</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>Igor</td>
+				<td>99999-99999</td>
+				<td>contato@gmail.com</td>
+			</tr>	
+			<tr>
+				<td> Marcela</td>
+				<td>98857-96454</td>
+				<td>marcela@gmail.com</td>
+			</tr>	
+	<!--lista nao ordenada é ur, lista ordenada é or. th é table head (cabeçalho da lista), tr é table role, e td é table data, dados da lista-->
+
+		</table>
+
+	<div id="cm"></div>
+	<div id="mm"></div>
+	<div id="in"></div>
+	<div id="pixel"></div>
+	<div id="ponto"></div>
+	<div id="picas"></div>
+	<!-- assim que se coloca/referencia unidades fixas-->
+
+<br><br>
+	Texto solto no body
+
+	<div class="container">
+		texto no container
+		<div class="inside">
+			texto no inside </div>
+	</div>
+		<br><br>	
+
+	<div id="base"></div>
+	<div id="container">
+		<div id="conteudo">
+			texto qualquer
+		</div>	
+	</div>	
+	<br>
+
+	<div class="borda hidden	">
+		conteudo qualquer
+	</div>
+	<div class="cont">
+		<div class="content">
+		Conteudo </div>
+	</div>		
+
+	<div class="quadrado"></div>
+	<div class="quadrado2"></div>
+
+
+	<!--
+
+	<div class="quadrado borda"></div>
+-->
+<!-- colocar o nome da classe borda na classe quadrada, deu as caracteristicas de uma pra outra-->
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+
+
+	 
+
+	</body>	
+</html>
+
+<!-- vou colocar o resto do conteudo  das aulas em outro arquivo em outra pasta-->

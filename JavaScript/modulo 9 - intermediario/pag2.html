@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS intermediate</title>
+
+   <script>
+      // function h1click(){
+        //     console.log("Executando a função") }
+        function changeH1(input){
+          //  let input = document.getElementById("texto");
+            let h1 = document.getElementsByTagName("h1")[0];
+            //h1.innerText = input.value;
+            h1.innerText = input.value;
+            // console.log(h1);
+        } 
+        function hideH1(){
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.style.display = "none";
+        }   
+    </script> 
+    <style>
+        div {
+            display: inline-block;
+            padding: 20px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- <h1 onclick="console.log('H1 foi clicado')">Clique em mim</h1> -->
+
+<!-- <h1 onclick="h1click()">Clique em mim</h1> 
+ta atribuido na function-->
+    <!-- <h1 onclick="console.log(this)">Clique em mim</h1> 
+    nesse caso o this é o proprio elemento. 
+    da pra por exemplo repetir esse elementod e colocar <h1 onclick="this.style.color='red'"> ... 
+    ai quando for clicado, o texto vai mudar de cor.-->
+
+    <h1>Clique em mim</h1>
+
+    <!-- <input type="text" onchange="changeH1()">
+    esse codigo permite que toda vez q vc inserir algo no input, apareça h1(clique em mim) -->
+    
+    <!-- <input id="texto"type="text" onchange="changeH1()"> 
+    esse meninao aqui, junto com a linha 13 e 15 da function no script la em cima, fazem o texto h1 se transformar no q foi escrito no input -->
+
+    <!-- <input type="text" onchange="changeH1(this)">  
+    ja esse bonito aqui faz a mesma coisa mas sem precisar colocar um id na tag. ele usa o this como argumento da função na hora de declara-la no input
+    -->
+    <!-- <input type="text" oninput="changeH1(this)">   
+    aqui, permite digitar e o texto vai mudando a medida q vc digita 
+    -->
+    <div onclick="hideH1()">
+        Click
+    </div>
+</body>
+</html>

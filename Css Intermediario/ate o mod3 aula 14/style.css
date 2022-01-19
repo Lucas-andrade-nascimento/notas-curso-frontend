@@ -1,0 +1,137 @@
+#parprincipal{
+	color: blue;
+}
+#titulo {
+	color: pink;
+
+}
+
+.texto_verde {
+	color: green ;
+
+}
+
+/*Referencias de unidades fixas */
+#cm {
+	background: blue;
+	width: 1cm;
+	height: 1cm;
+
+}
+#mm {
+	background:  red;
+	width:  1mm;
+	height:  1mm;
+}
+#in {
+	background:  blue;
+	width:  1in;
+	height:  1in;
+}
+#pixel{
+	background:  red;
+	width:  5px;
+	height:  5px;
+}
+#ponto{
+	background:  blue;
+		width:  5pt;
+	height:  5pt;
+}
+#picas{
+	background:  red;
+	width:  5pc;
+	height:  5pc;
+} /* 1 pc = 12px */
+
+/*unidades relativas agora*/
+
+.container {
+	width: 200px;
+	height: 100px;
+	background:  red;
+/* a medida vw é relativa a largura da pag. 1vw é 1% da pagina, no ex é 50vw, ou seja, 50% de vermelho na pagina. e a medida q voce aumenta ou diminui  pag, a barra se altera tbm. e o vh é referente a altura. o vmin é refente ao menor valor e o vmax é referente ao maior valor */
+
+}
+.inside {
+	width: 80%;
+	height: 50%;
+	background: blue;
+
+
+}  /* o 'em' é relativo a media de px (ou qualquer unidade da classe superior), e varia de acordo com o valor q colocar nele */
+/* tem o 'rem'que é ligado ao tamanho do elemento raiz e nao da classe q ele ta inserido. sendo referenciado pelo tamanho padrao do html */
+/* usando o % é sempre referente a uma porcentagem definiada em relação ao "pai", a class o qual o elemento esta inserido.*/
+
+#base {
+	height: 10px;
+	background: red;
+}
+#container{
+	background: blue;
+	color: white;
+	padding-top: 10px;
+	/*margin-top: 10px;
+	margin-left: 10px;
+ 	Pra fazer afastamento de margem em todas as direções é so usar o margin soozinho */
+
+ 	/* o padding da o afastamento da margem por dentro do elemento. ex, num bg azul, um margin afasta o azul e o texto, ja o padding da um afastamento do texto expandindo a barra azul*/
+
+}
+
+.borda {
+	border-width:  5px;
+	border-color: red;
+	
+}
+.quadrado
+{ width: 100px;
+	height:  100px;
+	background-color: yellow;
+
+}
+/*pra fazer um circulo é so usar o border-radius em 50%*/
+
+/* tu pode fazer colocar uma cor em cada parte da borda.
+colocando cada nome e as cores ficaram em sentido horario (serve para tamanho tbm).
+se tu colocar border:  espessura, estilo e cor; da pra colocar tudo numa atribuição so. */
+
+/*mais estilos de borda*/
+
+.dotted {border-top-style: dotted;}
+.dashed{border-style: dashed;}
+.solid{border-style: solid;}
+.none{border-style: none;}
+.hidden{border-style:  hidden;}
+
+body{ 
+	margin: 0px;
+	padding: 0px;
+ }
+ .cont{
+ 	background-color: red;
+ 	padding:  10px;
+ 	border:  5px solid blue;
+ 	margin: 10px;
+ }
+ .content{
+ 	background-color: #dddd;
+ 	outline: 5px solid green;
+ 	padding: 5px;
+ }
+.quadrado{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border: 10px solid blue;
+	/* box-sizing: border-box; - limita a caixa ao tamanho dela, nao permitindo q a border aumente a box*/
+	
+}
+.quadrado2 {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+ /*o outline cria uma bordar sem afetar o boxmodel, sem afastar nenhum elemento*/
+
+  
