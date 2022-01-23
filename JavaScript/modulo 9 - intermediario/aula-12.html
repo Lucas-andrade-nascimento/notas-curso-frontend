@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Novo título</title>
+    <style>
+
+    </style>
+    <script>
+        function f(e) {
+            console.log("teste");
+        //    console.log(this); //nessa configuraçao, this vai ser window
+            console.log(e); // esse aqui mostra undfined porque h1 nao ta passadno nenhum argumento
+        }
+        function f1(e){
+            console.log("teste f1");
+        //    console.log(this); //aqui o this vai ser o elemento h1
+            console.log(e); // esse pasa MouseEvent ele passando o isso, da pra fazer o seguinte
+            console.log(e.target);
+        }
+
+        window.onload = function (){
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.addEventListener("click", f1); // aqui vc passa a função f1 sem parenteses pq se ela tiver parenteses, o js ja executa na hora, e a ideia do evento é executar onclick 
+        }
+
+    </script>
 </head>
 <body>
-    
+    <h1 onclick="f(this)">title</h1>
+
 </body>
 </html>
