@@ -1,1 +1,2 @@
-// 7 - eventos parte 1 dom events
+// documento vazio pra usar quando precisar
+

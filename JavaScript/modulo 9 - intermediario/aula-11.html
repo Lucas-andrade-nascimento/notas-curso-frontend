@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parenteses na função</title>
+
+    <script>
+
+        function ret3() {
+            console.log(3);
+            return 5;
+        }
+
+        let ret5 = ret3; //aqui voce esta colocando a função na variavel - ou seja a variavel passa a representar a função
+        let ret6 = ret3(); //aqui voce executa a função e o resultado dela (return) é armazenado na variavel
+
+    </script>
+</head>
+<body>
+    <h1 onclick="ret3()">clique em mim</h1>
+    <!-- aqui é necessario  colocar o parenteses pra o html entender que é uma exeção de função e nao um
+    texto a ser mostrado na tela. (como é html e nao js, aqui tem q executar a função de qqr modo)-->
+
+</body>
+</html>

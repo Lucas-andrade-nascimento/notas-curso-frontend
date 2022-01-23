@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    
+    <h1 id="t1">título 1</h1>
+
+    <h2 id="t2">outro título qqr 2</h2>
+
+    <script>
+
+        let t1 = document.getElementeById("t1");
+        let t2 = document.getElementeById("t2");
+
+       t1.onclick = colocarEmMaiusculo;
+       t2.onclick = colocarEmMaiusculo;
+
+       function colocarEmMaiusculo() {
+           this.innerHTML = this.innerHTML.toUpperCase();
+
+       }
+       //o this torna a função usual para qualquer variavel, visto q ele se torna a variavel que voce quiser no momento do uso e so! 
+
+    </script>
+</body>
+</html>
